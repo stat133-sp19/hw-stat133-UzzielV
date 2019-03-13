@@ -2,7 +2,7 @@
 title: "warmup01-Uzziel-Valencia.Rmd"
 author: "Uzziel Valencia"
 date: "2/4/2019"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
