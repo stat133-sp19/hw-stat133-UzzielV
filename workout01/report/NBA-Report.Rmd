@@ -1,0 +1,16 @@
+---
+title: "NBA-Report"
+author: "Uzziel Valencia"
+date: "3/13/2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 5.1) Effective Shooting Percentage
+
+two_ptr = two_ptr %>%
+  group_by(name) %>%
+  summarise(made = sum(shot_made_flag == 'shot_yes'))
