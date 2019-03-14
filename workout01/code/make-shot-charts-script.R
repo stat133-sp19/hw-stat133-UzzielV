@@ -1,10 +1,10 @@
----
-title:'make-shot-charts-script.R'
-description: 'This script will make visualations of where shots were taken from'
-inputs: 'shots-data.csv'
-outputs: 'Diagrams showing where on the court players were when taking shots'
----
-  
+
+#title:'make-shot-charts-script.R'
+#description: 'This script will make visualations of where shots were taken from'
+#inputs: 'shots-data.csv'
+#outputs: 'Diagrams showing where on the court players were when taking shots'
+ 
+# Ment to be run from working directory 'code.'   
 # Installing necessary R packages
   
 install.packages("jpeg")
@@ -19,9 +19,9 @@ library(grid)
 
 # In terminal
 #curl -O https://raw.githubusercontent.com/ucb-stat133/stat133-hws/master/images/nba-court.jpg
-#mv nba-court.jpg ./images
+#mv nba-court.jpg ../images
 
-court_file <- "./images/nba-court.jpg"
+court_file <- "../images/nba-court.jpg"
 
 court_image <- rasterGrob(
   readJPEG(court_file),
@@ -42,7 +42,7 @@ ggsave("andre-iguodala-shot-chart.pdf",
        width = 6.5,
        height = 5,
        device = "pdf",
-       path = './images',
+       path = '../images',
        units = "in")
 
 draymond_shot_chart <- ggplot(data = green)+
@@ -57,7 +57,7 @@ ggsave("draymond-green-shot-chart.pdf",
        width = 6.5,
        height = 5,
        device = "pdf",
-       path = './images',
+       path = '../images',
        units = "in")
 
 kevin_shot_chart <- ggplot(data = durant)+
@@ -72,7 +72,7 @@ ggsave("kevin-durant-shot-chart.pdf",
        width = 6.5,
        height = 5,
        device = "pdf",
-       path = './images',
+       path = '../images',
        units = "in") 
 
 klay_shot_chart <- ggplot(data = thompson)+
@@ -87,7 +87,7 @@ ggsave("klay-thompson-shot-chart.pdf",
        width = 6.5,
        height = 5,
        device = "pdf",
-       path = './images',
+       path = '../images',
        units = "in")
 
 stephen_shot_chart <- ggplot(data = curry)+
@@ -102,10 +102,12 @@ ggsave("stephen-curry-shot-chart.pdf",
        width = 6.5,
        height = 5,
        device = "pdf",
-       path = './images',
+       path = '../images',
        units = "in")
 
 # Facetting Shot Charts
+
+shots_data <- read_csv("../data/shots-data.csv")
 
 shot_wrap <- ggplot(data = shots_data)+
   annotation_custom(court_image, -250,250,-50,420)+
@@ -115,14 +117,13 @@ shot_wrap <- ggplot(data = shots_data)+
   theme_dark()+
   facet_wrap(~ name)
 
-shot_wrap
 
 ggsave("gsw-shot-charts.pdf",
        plot = shot_wrap,
        width = 8,
        height = 7,
        device = "pdf",
-       path = './images',
+       path = '../images',
        units = "in") 
 
 ggsave("gsw-shot-charts.png",
@@ -130,7 +131,7 @@ ggsave("gsw-shot-charts.png",
        width = 8,
        height = 7,
        device = "png",
-       path = './images',
+       path = '../images',
        units = "in")
 
-#green$x
+

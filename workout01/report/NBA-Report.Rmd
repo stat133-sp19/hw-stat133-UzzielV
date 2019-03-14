@@ -9,8 +9,16 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r echo = FALSE}
+# This allows you to ge the tables where ever you want them.
+shots_data <- read_csv('../data/shots-data.csv')
+shots_data
+```
+
 # 5.1) Effective Shooting Percentage
 
 two_ptr = two_ptr %>%
   group_by(name) %>%
   summarise(made = sum(shot_made_flag == 'shot_yes'))
+  
+getwd()
