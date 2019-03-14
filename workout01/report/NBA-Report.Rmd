@@ -12,7 +12,7 @@ But why do we love our Warriors so much? Do they remind us of home? Of our famil
 
 The motivation of this article is to show the readers *why* the Bay's love for the Warriors is warranted. To do this, let's first take a stroll down memory lane to see what makes the Warriors so unique.   
 
-#### History
+### History
 According to the Warriors' own records [[1]](https://www.nba.com/warriors/team_history_index.html), they are one of only 3 original charter teams left in the modern NBA. They share legacies as long and as storied as those of the Knicks and the Celtics. And you know what else? When all the basketball teams in America decided, "Hey, let's get together and compete to see who's best!" the Warriors, well, they showed up and just won the whole dang thing [[2]](https://www.nba.com/warriors/team_history_index.html). With this win in the 1946-47 season, the Warriors secured their place in history. As if that wasn't enough, the Warriors claim 18 Hall-of-Famers- while 4 have gone on to coach the team [[3]](https://basketball.fandom.com/wiki/Golden_State_Warriors).  
 
 ### Getting Nerdy
@@ -46,6 +46,13 @@ Any way you'd like to slice it, the Warriors play a good game. But, we can still
 
 ***
 
+### Getting Points on the Board
+
+If you wanna win, you gotta score. It's as simple as that, and our Warriors figured that out a long time ago.  
+Let's look at a few of our star players.
+Let's look at Andre Iguodala, Kevin Durant, Stephen Curry, Klay Thompson, and Draymond Green as they shoot from the 2.
+Looking at these figures from the 2016 Season, our boys had the game in the bag (or perhaps I should say, "in the net").
+
 ### Two Pointers? Served All Day Baby 
 
 | Player | Successes | Attempts | Success Rate |
@@ -55,6 +62,10 @@ Any way you'd like to slice it, the Warriors play a good game. But, we can still
 | Stephen Curry | 304 | 563 | 53% |
 | Klay Thompson | 329 | 640 | 51% |
 | Draymond Green | 171 | 346 | 49% |
+
+If we look at the success rates for these guys, they almost all make over 50% of the baskets they shoot from the 2 point-line. If we were in Vegas, that'd be a good bet to take!  
+
+Oh, so you're curious about the 3 point-line? Well, the Warriors handle their business out there too.
 
 ### Threes? Yeah, We Got em' Too
 
@@ -66,6 +77,9 @@ Any way you'd like to slice it, the Warriors play a good game. But, we can still
 | Andre Iguodala | 58 | 161 | 36% |
 | Draymond Green | 74 | 232 | 32% |
 
+Even though we see a decrease in the success rate of these shots when compared to shots from the 2 point-line, these are still pretty impressive stats. These Warriors' success rates from the 3 point-line are competing against the best batting averages in the MLB! [[5]](https://www.baseball-reference.com/leaders/batting_avg_career.shtml)  
+
+
 ### Overall? We Ballin'
 
 | Player | Successes | Attempts | Success Rate |
@@ -76,9 +90,19 @@ Any way you'd like to slice it, the Warriors play a good game. But, we can still
 | Stephen Curry | 584 | 1250 | 47% |
 | Draymond Green | 245 | 578 | 42% |
 
-  
+When looking at overall shots taken by these Warriors, its about a 50/50 chance their gonna put points on the board; which is saying a lot in the world of sports.  
+
+***
+
 #### When it comes to shooting, we've got our bases covered
 ```{r out.width = '80%', echo = FALSE, fig.align = 'center'}
 knitr::include_graphics('../images/gsw-shot-charts.png')
 ```
 
+Don't think our Warriors need perfect conditions to perform. The chart above shows that these guys can keep sinking shots regardless of where they are on the court.
+
+### We're Your Caps with Pride
+
+So yes reader, when you walk out into the streets tommorrow, wear your Warriors gear with pride and know that 'The Town', is your town.  
+
+The Warriors have earned the respect and love of this city!
