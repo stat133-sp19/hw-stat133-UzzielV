@@ -1,50 +1,44 @@
-NBA-Report
+Warriors, Your Adoration is Earned
 ================
 Uzziel Valencia
 3/13/2019
 
-    ## Warning: Missing column names filled in: 'X1' [1]
+### An indepth look at the perfomance of San Fransisco's beloved Warriors
 
-    ## Parsed with column specification:
-    ## cols(
-    ##   X1 = col_double(),
-    ##   name = col_character(),
-    ##   team_name = col_character(),
-    ##   game_date = col_character(),
-    ##   season = col_double(),
-    ##   period = col_double(),
-    ##   minutes_remaining = col_double(),
-    ##   seconds_remaining = col_double(),
-    ##   shot_made_flag = col_character(),
-    ##   action_type = col_character(),
-    ##   shot_type = col_character(),
-    ##   shot_distance = col_double(),
-    ##   opponent = col_character(),
-    ##   x = col_double(),
-    ##   y = col_double(),
-    ##   minute = col_double()
-    ## )
+Our city has always rallied behind our Warriors; we wear their names on our backs, invite them into our homes via the tv, read about them on our phones, and talk about them to our friends. The Warriors symbol can be found all throughout the Bay Area, a proud flag shining bright under our golden Californian sun.
 
-    ## # A tibble: 4,334 x 16
-    ##       X1 name  team_name game_date season period minutes_remaini…
-    ##    <dbl> <chr> <chr>     <chr>      <dbl>  <dbl>            <dbl>
-    ##  1     1 Step… Golden S… 12/15/16    2016      3                3
-    ##  2     2 Step… Golden S… 10/28/16    2016      3                9
-    ##  3     3 Step… Golden S… 11/1/16     2016      2                5
-    ##  4     4 Step… Golden S… 12/1/16     2016      3                5
-    ##  5     5 Step… Golden S… 4/4/17      2016      3                2
-    ##  6     6 Step… Golden S… 11/19/16    2016      4                5
-    ##  7     7 Step… Golden S… 11/21/16    2016      3                9
-    ##  8     8 Step… Golden S… 3/29/17     2016      2                1
-    ##  9     9 Step… Golden S… 11/25/16    2016      3               10
-    ## 10    10 Step… Golden S… 12/28/16    2016      3                3
-    ## # … with 4,324 more rows, and 9 more variables: seconds_remaining <dbl>,
-    ## #   shot_made_flag <chr>, action_type <chr>, shot_type <chr>,
-    ## #   shot_distance <dbl>, opponent <chr>, x <dbl>, y <dbl>, minute <dbl>
+But why do we love our Warriors so much? Do they remind us of home? Of our family? Of ourselves? Is our love for the Warriors modern day triablism at it's finest, or is it something more? Is it something defendable, perhaps, quantifiable even? In short, **yes!**
 
-5.1) Effective Shooting Percentage
-==================================
+### Two Pointers? Served All Day Baby
 
-two\_ptr = two\_ptr %&gt;% group\_by(name) %&gt;% summarise(made = sum(shot\_made\_flag == 'shot\_yes'))
+|     Player     | Successes | Attempts | Success Rate |
+|:--------------:|:---------:|:--------:|:------------:|
+| Andre Iguodala |    134    |    210   |      64%     |
+|  Kevin Durant  |    390    |    643   |      61%     |
+|  Stephen Curry |    304    |    563   |      53%     |
+|  Klay Thompson |    329    |    640   |      51%     |
+| Draymond Green |    171    |    346   |      49%     |
 
-getwd()
+### Threes? Yeah, We Got em' Too
+
+|     Player     | Successes | Attempts | Success Rate |
+|:--------------:|:---------:|:--------:|:------------:|
+|  Klay Thompson |    246    |    580   |      42%     |
+|  Stephen Curry |    280    |    687   |      41%     |
+|  Kevin Durant  |    105    |    272   |      39%     |
+| Andre Iguodala |     58    |    161   |      36%     |
+| Draymond Green |     74    |    232   |      32%     |
+
+### Overall? We Ballin'
+
+|     Player     | Successes | Attempts | Success Rate |
+|:--------------:|:---------:|:--------:|:------------:|
+|  Kevin Durant  |    495    |    915   |      54%     |
+| Andre Iguodala |    192    |    371   |      52%     |
+|  Klay Thompson |    575    |   1220   |      47%     |
+|  Stephen Curry |    584    |   1250   |      47%     |
+| Draymond Green |    245    |    578   |      42%     |
+
+#### When it comes to shooting, we've got our bases covered
+
+<img src="../images/gsw-shot-charts.png" width="80%" style="display: block; margin: auto;" />
