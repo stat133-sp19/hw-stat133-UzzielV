@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r echo = FALSE}
+library(readr)
+
 # This allows you to ge the tables where ever you want them.
 shots_data <- read_csv('../data/shots-data.csv')
 shots_data
