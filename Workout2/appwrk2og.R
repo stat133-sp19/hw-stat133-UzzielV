@@ -81,7 +81,6 @@ ui <- fluidPage(
              
  ),
  h4('Timelines'),
- h5('Three modes of investing'),
  plotOutput("save_graph"),
  h4('Balances'),
  verbatimTextOutput("rwdata")
@@ -137,14 +136,14 @@ server <-  function(input, output) {
         geom_area(aes(fill= returns), alpha = 0.4)+
         geom_point(size = 1)+
         facet_wrap(~returns)+
-        labs(x = 'Years', y = 'Return Value (Dollars)')+
+        labs(title = 'Three Modes of Investing',x = 'Years', y = 'Return Value (Dollars)')+
         theme_bw()
     }
     else{
       ggplot(data= modalities2(), aes(x = year, y = value, group = returns, col = returns)) +
         geom_line() +
         geom_point( size=1.2)+
-        labs(x = 'Years', y = 'Return Value')
+        labs(title = 'Three Modes of Investing',x = 'Years', y = 'Return Value')
     }
   })
   
