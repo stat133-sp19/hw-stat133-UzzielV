@@ -113,7 +113,6 @@ bin_cumulative <- function(n= 5, p= 0.5){
   return(df)
 }
 
-#bin_cumulative(9,0.9:1.1)
 #bin_cumulative(9,0.9)
 
 #' @export
