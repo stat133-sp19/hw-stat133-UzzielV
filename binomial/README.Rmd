@@ -38,13 +38,13 @@ install.packages("devtools")
 Then you can install this package from github:
 
 ```r
-devtools::install_github("stat133-sp19/hw-stat133-UzzielV/tree/master/binomial")
+devtools::install_github("stat133-sp19/hw-stat133-UzzielV/binomial")
 ```
 
 If you want to see the fancy-shmancy vignette I built too, you can run the following code:
 
 ```r
-devtools::install_github("stat133-sp19/hw-stat133-UzzielV/tree/master/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-UzzielV/binomial",build_vignettes = TRUE)
 ```
 
 ### Now, let's use it!
