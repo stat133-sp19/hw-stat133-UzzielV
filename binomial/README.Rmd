@@ -1,17 +1,12 @@
 ---
-  output:
-    github_document:
-      html_preview: false
+title: "read_me_s"
+author: "Uzziel Valencia"
+date: "5/3/2019"
+output: github_document
 ---
 
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Trying to get This to Auto-populate on my other files
-
-Let's try something new
+Let's see, did this work?
