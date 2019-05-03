@@ -1,0 +1,5 @@
+"0","#Likewise, the second html table can be extracted (as an xml_nodeset) in the following way:"
+"0","# extracting second table "
+"0","xml_table2 <- xml_doc %>%"
+"0","  html_nodes(""table"") %>%"
+"0","  extract(2)"

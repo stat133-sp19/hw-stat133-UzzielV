@@ -5,8 +5,8 @@ account: uzzielv
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 871394
-bundleId: 2020057
+bundleId: 2020211
 url: https://uzzielv.shinyapps.io/Workout2/
-when: 1555547293.65523
+when: 1555553076.23486
 asMultiple: FALSE
 asStatic: FALSE

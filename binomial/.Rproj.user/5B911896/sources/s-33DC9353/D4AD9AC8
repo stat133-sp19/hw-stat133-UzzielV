@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556736101375.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1720643160",
+    "id" : "D4AD9AC8",
+    "lastKnownWriteTime" : 1556838720,
+    "last_content_update" : 1556838720887,
+    "path" : "~/R_Studio_Files/Stat_133/Lab-Fri-11am/binomial/R/prive_check.R",
+    "project_path" : "R/prive_check.R",
+    "properties" : {
+        "cursorPosition" : "17,0",
+        "scrollLine" : "3",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,3 @@
+"0","ggplot(data = table, aes(x = reorder(Sentiment,Characters, descending = TRUE), y = Characters))+"
+"0","  coord_flip()+"
+"0","  geom_bar(stat= 'identity', fill = 'blue')"

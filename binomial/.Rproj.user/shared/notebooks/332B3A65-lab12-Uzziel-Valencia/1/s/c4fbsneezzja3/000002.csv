@@ -1,0 +1,5 @@
+"0","#The object xml_table1 is not really an R table, but an object of class xml_nodeset. To extract the html table as a data frame, ""rvest"" provides the function html_table():"
+"0","tbl1 <- html_table(xml_table1)"
+"0","head(tbl1)"
+"1","[[1]]
+"

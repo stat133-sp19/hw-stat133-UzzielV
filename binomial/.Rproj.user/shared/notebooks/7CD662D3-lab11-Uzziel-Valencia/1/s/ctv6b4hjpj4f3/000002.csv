@@ -1,0 +1,3 @@
+"0","ggplot(data = tbl, aes(x = reorder(Var1, Freq), y = Freq))+"
+"0","  geom_bar(stat = 'identity', fill = 'blue')+"
+"0","  coord_flip()"

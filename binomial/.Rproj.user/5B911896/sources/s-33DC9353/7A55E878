@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556173363545.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7A55E878",
+    "lastKnownWriteTime" : 1556838114,
+    "last_content_update" : 1556838114047,
+    "path" : "~/R_Studio_Files/Stat_133/Lab-Fri-11am/binomial/R/function1.R",
+    "project_path" : "R/function1.R",
+    "properties" : {
+        "cursorPosition" : "113,17",
+        "scrollLine" : "100",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

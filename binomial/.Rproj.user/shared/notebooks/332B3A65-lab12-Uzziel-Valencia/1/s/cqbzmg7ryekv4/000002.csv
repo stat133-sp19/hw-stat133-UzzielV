@@ -1,0 +1,3 @@
+"0","# extracting all info into a vector"
+"0","#The object xml_doc is an object of class ""xml_document"". If you are curious about extracting all the content in a character vector, then use the function html_text(), chained with the pipe %>% operator:"
+"0","xml_text <- xml_doc %>% html_text()"

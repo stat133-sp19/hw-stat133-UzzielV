@@ -1,0 +1,103 @@
+---
+title: "Intoduction to Binomial Package"
+author: "Uzziel Valencia"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE,comment = "#>")
+library(binomial)
+#shift+command+B
+```
+
+## Binomial
+
+Welcome to the Binomial package. This **R** package will help you to compute any and all of the most essential binomial funcions.
+\n
+
+### Operations
+The operations in this package include the following:
+
+* **bin_choose( )**: Giving the number of successes in a given number of trials
+* **bin_probability( )**: Computing the binomial probability under specified conditions
+* **bin_distribution( )**: Gives a dataframe with the listed successes and their probabilities
+* **bin_cumulative( )**: Gives a dataframe with the listed successes, thier probabilities, and a cumulative count of probabilities
+* **bin_variable( )**: Returns a list of all the relevant variables of a binomial distribution
+\n
+
+#### Summary Operations
+There are other functions that give measures of your binomial distribution. Ther are as follows:
+
+* **bin_mean()**: Gives the expected mean of a distribution that you specify
+* **bin_varience()**: Gives the variance of a distribution that you specify
+* **bin_mode()**: Gives the mode of a distribution that you specify
+* **bin_skewness()**: Gives the skewness of a distribution that you specify
+* **bin_kurtosis()**: Gives the kurtosis (taildness) of a distribution that you specify
+
+\n
+
+```{r}
+bin_choose()
+```
+
+
+### Examples
+
+Let's look at how we might utilize Binomial; first we're gonna compute a binomial probability using **bin_probability( )**.
+
+
+Wow! Look at the result!
+
+\n
+Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+
+- Never uses retina figures
+- Has a smaller default figure size
+- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+
+## Vignette Info
+
+Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
+
+## Styles
+
+The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+
+    output: 
+      rmarkdown::html_vignette:
+        css: mystyles.css
+
+## Figures
+
+The figure sizes have been customised so that you can easily put two images side-by-side. 
+
+```{r, fig.show='hold'}
+plot(1:10)
+plot(10:1)
+```
+
+You can enable figure captions by `fig_caption: yes` in YAML:
+
+    output:
+      rmarkdown::html_vignette:
+        fig_caption: yes
+
+Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
+
+## More Examples
+
+You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+
+```{r, echo=FALSE, results='asis'}
+knitr::kable(head(mtcars, 10))
+```
+
+Also a quote using `>`:
+
+> "He who gives up [code] safety for [code] speed deserves neither."
+([via](https://twitter.com/hadleywickham/status/504368538874703872))

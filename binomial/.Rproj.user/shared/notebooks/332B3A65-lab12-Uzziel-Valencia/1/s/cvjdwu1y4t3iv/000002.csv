@@ -1,0 +1,5 @@
+"0","# extract just the team names"
+"0","teams <- str_extract(hrefs,""[A-Z]{3}"")"
+"2","Error in str_extract(hrefs, ""[A-Z]{3}"") : 
+  could not find function ""str_extract""
+"

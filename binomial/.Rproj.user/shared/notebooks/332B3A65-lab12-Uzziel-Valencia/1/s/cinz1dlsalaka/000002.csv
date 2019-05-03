@@ -1,0 +1,5 @@
+"0","# Actually, both tables can be extracted simultaneously:"
+"0","# two html tables"
+"0","xml_tables <- xml_doc %>%"
+"0","  html_nodes(""table"") %>%"
+"0","  extract(1:2)"
