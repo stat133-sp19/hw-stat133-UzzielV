@@ -1,6 +1,6 @@
 ---
-  output:github_document
-    github_document: github_trial(1)
+  output:
+    github_document:
       html_preview: false
 ---
 
