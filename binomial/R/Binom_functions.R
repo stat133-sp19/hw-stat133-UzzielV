@@ -16,13 +16,7 @@ bin_choose <- function( n = 5, k = 2){
   sapply(n,factorial) / ((sapply(k,factorial)) * sapply(x,factorial))
 }
 
-#bin_choose(5,2)
 
-#bin_choose(5,0)
-
-#bin_choose(5,1:3)
-
-#bin_choose(5,5)
 
 
 #' @title bin_probability
@@ -42,15 +36,9 @@ bin_probability <- function (k = 2, n = 5, p = 0.5){
     p**k * ((1-p)**(n-k))
 }
 
-#bin_probability(0:4,5,0.5)
 
-#bin_probability(2,5,0.5)
 
-#bin_probability(55,100,0.45)
 
-#bin_probability(-4,5,0.3)
-
-1.5
 #' @title bin_distribution
 #' @description gives a dataframe with successes and probabilities
 #' @param n trials
@@ -67,10 +55,6 @@ class(df) <- c('bindis','data.frame')
 return(df)
 }
 
-#bin_distribution(5, (0.9:1.1))
-#bin_distribution(5,1)
-#bin_distribution(5,0.9)
-
 
 #' @export
 plot.bindis <- function(x){
@@ -81,20 +65,10 @@ plot.bindis <- function(x){
           col = 'green')
   invisible(x)
 }
-#dis1 <- bin_distribution(n = 5, p = 0.5)
-#plot(dis1)
-
-
-#df <- data.frame(success = 0:n, probability = bin_probability(0:n,n,p))
-
-#barplot(df$probability,
-#        names.arg = df$success,
-#        ylab = 'probability',
-#        xlab = 'success')
 
 
 
-1.6
+
 #' @title bin_cumulative
 #' @description returns dataframe with both the probabilities and the successes in the first column
 #' @param n number of trials
@@ -113,7 +87,6 @@ bin_cumulative <- function(n= 5, p= 0.5){
   return(df)
 }
 
-#bin_cumulative(9,0.9)
 
 #' @export
 plot.bincum <- function(x){
@@ -124,10 +97,10 @@ plot.bincum <- function(x){
        xaxt = "n")
   axis(1,at = 1:length(x$success),labels = x$success)
 }
-#bin_cum1 <- bin_cumulative()
-#plot(bin_cum1)
 
-#1.7
+
+
+
 #' @title bin_variable
 #' @description returns a bin variable
 #' @param n trials
@@ -143,7 +116,7 @@ bin_variable <- function(n,p){
   class(lst) <- c('binvar','list')
   return(lst)
 }
-#bin_variable(5,0.5)
+
 
 #' @export
 print.binvar <- function(x){
@@ -155,8 +128,7 @@ print.binvar <- function(x){
   cat("\n", "Probability of Success:", x[['Probability']])
   invisible(x)
 }
-#bin1 <- bin_variable(n = 10, p = 0.3)
-#bin1
+
 
 #' @export
 summary.binvar <- function(x){
@@ -171,7 +143,6 @@ summary.binvar <- function(x){
   class(ls) <- c("summary.binvar","list")
 return(ls)
 }
-#summary.binvar(bin1)
 
 #' @export
 print.summary.binvar <- function(x){
@@ -191,9 +162,9 @@ print.summary.binvar <- function(x){
   cat("\n","-kurtosis:",x[[7]])
   invisible(x)
 }
-#bin1 <- bin_variable(n = 10, p = 0.3)
-#binsum1 <- summary(bin1)
-#binsum1
+
+
+
 
 #1.8 #Functions of Measures
 
@@ -266,8 +237,4 @@ bin_kurtosis <- function(n = 10, p = 0.3){
   aux_kurtosis(n,p)
 }
 
-#bin_mean()
-#bin_variance()
-#bin_mode()
-#bin_skewness()
-#bin_kurtosis()
+

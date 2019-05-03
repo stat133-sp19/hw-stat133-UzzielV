@@ -6,8 +6,8 @@ test_that("check_prob with passing values", {
   expect_true(check_prob(c(0.5,0.6,0.7,0.8,0.9)))
 })
 
-test_that("check_prob with bad whole number values ", {
-  expect_error(check_prob(1:5))
+test_that("check_prob will be a length 1 ", {
+  expect_length(check_prob(0.6),1)
 })
 
 test_that(" check_prob with negative values", {
@@ -52,8 +52,9 @@ test_that("both 'n' and 'k' are numeric objects", {
 
 #Context("Check for Summary Measures")
 
-test_that("aux_mean with negative p", {
-  expect_error(aux_mean(5,-1))
+test_that("aux_mean works", {
+  expect_equal(aux_mean(5,0.5),2.5)
+  expect_is(aux_mean(5,0.4),"numeric")
 })
 
 test_that("aux_mean with higher 'p' than 'n'", {
@@ -66,8 +67,8 @@ test_that("aux_mean with negative values", {
   expect_error(aux_mean(-5,-2))
 })
 
-test_that("aux_varience with whole-number 'P'", {
- expect_error(aux_variance(5,2))
+test_that("aux_varience returns numeric object", {
+ expect_is(aux_variance(5,0.2),"numeric")
 })
 
 test_that("aux varience with negative 'p'  or 'n'", {
@@ -81,9 +82,9 @@ test_that("aux variance with invalid input",{
   expect_error(aux_variance(5,'i'))
 })
 
-test_that("aux mode length equals 1, less than n, cannot take negative",{
+test_that("aux mode length equals 1, returns a 'numeric', cannot take negative",{
   expect_length(aux_mode(),1)
-  expect_gt(aux_mode(),0)
+  expect_is(aux_mode(),"numeric")
   expect_error(aux_mode(-12,0.4))
 })
 
