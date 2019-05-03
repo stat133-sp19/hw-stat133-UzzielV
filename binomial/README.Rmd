@@ -1,1 +1,7 @@
-binomial
+---
+  output:github_document
+    github_document: github_trial(1)
+      html_preview: false
+---
+
+## Trying
