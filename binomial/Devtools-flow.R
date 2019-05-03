@@ -7,7 +7,7 @@ devtools::test()              # run tests
 devtools::use_vignette()      # build vignettes
 devtools::check_man()         # checks manual
 
-Working-one
+Working_one
 devtools::document()          # generate documentation
 devtools::check_man()         # check documentation
 devtools::test()              # run tests

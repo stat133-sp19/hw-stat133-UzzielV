@@ -67,8 +67,9 @@ class(df) <- c('bindis','data.frame')
 return(df)
 }
 
-#bin_distribution()
-
+#bin_distribution(5, (0.9:1.1))
+#bin_distribution(5,1)
+#bin_distribution(5,0.9)
 
 
 #' @export
@@ -105,13 +106,15 @@ bin_cumulative <- function(n= 5, p= 0.5){
   check_trials(n)
   check_prob(p)
 
-  df <- data.frame(success = 0:n,
-                   probability = bin_probability(0:n,n,p),
-                   cumulative = cumsum(probability))
+  df <- bin_distribution(n,p)
+  cumulative <- cumsum(df$probability)
+  df$cumulative <- cumulative
   class(df) <- c('bincum','data.frame')
   return(df)
 }
-#bin_cumulative()
+
+#bin_cumulative(9,0.9:1.1)
+#bin_cumulative(9,0.9)
 
 #' @export
 plot.bincum <- function(x){

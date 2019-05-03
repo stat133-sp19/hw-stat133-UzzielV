@@ -85,7 +85,7 @@ Nice! How cool is that!? Of course, you can get fancier with the plots on your o
 Now, what if we want a data.frame with the cumulative probabilities of our distribution? Easy, let's use the function **bin_cumulative ( )** which takes 'n' and 'p'. 
 
 ```{r}
-#bin_cumulative( n = 5, p = 0.5)
+bin_cumulative( n = 5, p = 0.5)
 ```
 
 Look at that! A data.frame with the cumulative probabilities.

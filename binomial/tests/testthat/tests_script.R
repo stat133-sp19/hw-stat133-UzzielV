@@ -163,5 +163,5 @@ test_that("bin_cumulative cannot take improper 'n'",{
 
 test_that("bin_cumulative errors with improper vectors",{
   expect_error(bin_cumulative(c(5,-4),0.5))
-  expect_error(bin_cumulative(9,0.9:1))
+  expect_error(bin_cumulative(9,c(-0.1:-0.9)))
 })
