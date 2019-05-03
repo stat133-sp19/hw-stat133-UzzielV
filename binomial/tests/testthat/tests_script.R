@@ -144,7 +144,7 @@ test_that("bin_distribution cannot take improper 'p'",{
   expect_error(bin_distribution(5,-3))
 })
 
-test_that("bin_distribution is class (improper vector) REVISIT",{
+test_that("bin_distribution fails when given improper vector",{
   expect_error(bin_distribution(5,(4:6)))
   expect_error(bin_distribution((-2:4),3))
 })

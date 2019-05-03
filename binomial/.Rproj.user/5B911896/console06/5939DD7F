@@ -1,4 +1,78 @@
 ]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/binomial[?1034hairbears2-10-142-9-106:binomial uzzielvalencia$ [Kairbears2-10-142-9-106:binomial uzzielvalencia$ pwd
 /Users/uzzielvalencia/R_Studio_Files/Stat_133/Lab-Fri-11am/binomial
 ]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/binomialairbears2-10-142-9-106:binomial uzzielvalencia$ cd ..
-]0;~/R_Studio_Files/Stat_133/Lab-Fri-11amairbears2-10-142-9-106:Lab-Fri-11am uzzielvalencia$ mv binomial hw-stat133
+[KMacBook-Air:Lab-Fri-11am uzzielvalencia$ pwd
+/Users/uzzielvalencia/R_Studio_Files/Stat_133/Lab-Fri-11am
+]0;~/R_Studio_Files/Stat_133/Lab-Fri-11amMacBook-Air:Lab-Fri-11am uzzielvalencia$ cd /[Khw-stat133
+]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/hw-stat133MacBook-Air:hw-stat133 uzzielvalencia$ ls
+Workout2		binomial 2		demo			workout01
+binomial		binomial_0.1.0.tar.gz	warmup1
+]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/hw-stat133MacBook-Air:hw-stat133 uzzielvalencia$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   binomial/.Rproj.user/5B911896/console06/5939DD7F[m
+	[31mmodified:   binomial/.Rproj.user/5B911896/console06/5939DD7F.env[m
+	[31mmodified:   binomial/.Rproj.user/5B911896/console06/INDEX001[m
+	[31mmodified:   binomial/.Rproj.user/5B911896/sources/prop/INDEX[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/7A55E878[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/7A55E878-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/880A3A2F[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/880A3A2F-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/A047C201-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/A41DADD8[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/A41DADD8-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/CD7BF803[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/CD7BF803-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/D4AD9AC8[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/D4AD9AC8-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/EB000D15[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/EB000D15-contents[m
+	[31mdeleted:    binomial/.Rproj.user/5B911896/sources/s-33DC9353/lock_file[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/5B911896254BE955/chunks.json[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/5B91189633DC9353/chunks.json[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/chunks.json[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/csagrwqc73al7/000002.csv[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/csagrwqc73al7/000003.metadata[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/csagrwqc73al7/000003.rdf[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/csetup_chunk/000002.csv[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/cvbeqkj1kgofj/000002.csv[m
+	[31mdeleted:    binomial/.Rproj.user/shared/notebooks/E0EEB582-Introduction/1/s/cvbeqkj1kgofj/000003.error[m
+	[31mmodified:   binomial/.Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   binomial/tests/testthat/tests_script.R[m
+	[31mmodified:   binomial/vignettes/Introduction.Rmd[m
+	[31mmodified:   binomial_0.1.0.tar.gz[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/hw-stat133MacBook-Air:hw-stat133 uzzielvalencia$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/hw-stat133MacBook-Air:hw-stat133 uzzielvalencia$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;~/R_Studio_Files/Stat_133/Lab-Fri-11am/hw-stat133MacBook-Air:hw-stat133 uzzielvalencia$ git add .
